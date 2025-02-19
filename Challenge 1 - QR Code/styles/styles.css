@@ -55,15 +55,19 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 320px;
-    height: 500px;
+    width: 300px;
     padding: .9rem;
     border-radius: 1rem;
+    gap: var(--spacing-200);
 }
 
 img{
     display: block;
     border-radius: .5rem;
+}
+
+p{
+    margin: 0;
 }
 
 .top-txt{
@@ -75,7 +79,11 @@ img{
 }
 
 .bottom{
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 15px;
+    gap: var(--spacing-200);
+    padding-bottom: var(--spacing-300);
 }
 
 .bottom-txt{
@@ -89,5 +97,5 @@ img{
 footer{
     width: 100%;
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
