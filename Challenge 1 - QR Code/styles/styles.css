@@ -84,3 +84,9 @@ img{
     font-weight: var(--fw-preset2);
     color: var(--slate-500);
 }
+
+footer{
+    width: 100%;
+    display: flex;
+justify-content: center;
+}
