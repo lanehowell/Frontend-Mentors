@@ -55,7 +55,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 280px;
+    width: 1000px;
     padding: .9rem;
     border-radius: 1rem;
 }
