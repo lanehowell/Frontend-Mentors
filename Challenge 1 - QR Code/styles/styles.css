@@ -55,7 +55,8 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 290px;
+    width: 320px;
+    height: 500px;
     padding: .9rem;
     border-radius: 1rem;
 }
