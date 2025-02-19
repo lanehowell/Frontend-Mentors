@@ -85,10 +85,9 @@ p{
 .bottom{
     display: flex;
     flex-direction: column;
-    padding-inline: 15px;
+    width: 270px;
     gap: var(--spacing-200);
     padding-bottom: var(--spacing-300);
-    width: 270px;
 }
 
 .bottom-txt{
