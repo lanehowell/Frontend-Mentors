@@ -1,0 +1,132 @@
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2.5rem;
+
+    /* Text Preset 1 */
+    --fs-p1: 1.5rem;
+    --fw-p1: 600;
+    --lh-p1: 150%;
+    --ls-p1: 0px;
+
+    /* Text Preset 2 */
+    --fs-p2: .875rem;
+    --fw-p2: 400;
+    --lh-p2: 150%;
+    --ls-p2: 0px;
+
+    /* Text Preset 2 Bold */
+    --fs-p2-bold: .875rem;
+    --fw-p2-bold: 600;
+    --lh-p2-bold: 150%;
+    --ls-p2-bold: 0px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100vh;
+}
+
+body{
+    background-color: var(--grey-900);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper{
+    padding: var(--spacing-lg);
+    background-color: var(--grey-800);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: center;
+    border-radius: .75rem;
+    width: 384px;
+    transition: width, padding .5s;
+}
+
+.profile-img{
+    border-radius: 50%;
+    height: 88px;
+    width: 88px;
+}
+
+.name{
+    color: var(--white);
+    font-weight: var(--fw-p1);
+    font-size: var(--fs-p1);
+    line-height: var(--lh-p1);
+    letter-spacing: var(--ls-p1);
+}
+
+.location{
+    color: var(--green);
+    font-weight: var(--fw-p2-bold);
+    font-size: var(--fs-p2-bold);
+    line-height: var(--lh-p2-bold);
+    letter-spacing: var(--ls-p2-bold);
+}
+
+.description{
+    color: var(--white);
+    font-weight: var(--fw-p2);
+    font-size: var(--fs-p2);
+    line-height: var(--lh-p2);
+    letter-spacing: var(--ls-p2);
+}
+
+.links{
+    display: grid;
+    gap: var(--spacing-sm);
+    width: 100%;
+}
+
+.link{
+    padding-block: .75rem;
+    background-color: var(--grey-700);
+    border: none;
+    border-radius: .5rem;
+    color: var(--white);
+    font-weight: var(--fw-p2-bold);
+    font-size: var(--fs-p2-bold);
+    line-height: var(--lh-p2-bold);
+    letter-spacing: var(--ls-p2-bold);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.link:hover{
+    background-color: var(--green);
+    color: var(--grey-700);
+}
+
+footer{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper{
+        width: 327px;
+        padding: var(--spacing-md);
+    }
+}
