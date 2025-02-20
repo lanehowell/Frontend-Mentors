@@ -68,6 +68,12 @@ body{
     transition: all .5s ease-in-out;
 }
 
+@media screen and (max-width: 480px) {
+    .wrapper{
+        max-width: 329px;
+    }
+}
+
 .wrapper:hover{
     box-shadow: 1rem 1rem 0 rgb(0, 0, 0, 1);
 }
