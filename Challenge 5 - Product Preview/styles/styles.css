@@ -1,0 +1,159 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+:root{
+
+    /* Colors */
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font */
+    --font-size: 14px;
+    --spacing: 2rem;
+}
+
+
+body{
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--cream);
+}
+
+.title-text, .current-price{
+    font-family: 'Fraunces';
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-width: 600px;
+    margin-inline: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .card-info{
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: white;
+    padding: var(--spacing);
+}
+
+.type-text{
+    color: var(--grey);
+    font-size: .75rem;
+    letter-spacing: 5px;
+}
+
+.title-text{
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.description-text{
+    color: var(--grey);
+    font-size: .875rem;
+    line-height: 150%;
+}
+
+.price-info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.current-price{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--green-500);
+}
+
+.old-price{
+    color: var(--grey);
+    font-size: .75rem;
+    text-decoration: line-through;
+}
+
+.add-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: var(--green-500);
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    padding-block: .8rem;
+    font-size: .875rem;
+    cursor: pointer;
+    transition: all .25s;
+    font-weight: 500;
+}
+
+.add-btn:hover{
+    background-color: var(--green-700);
+}
